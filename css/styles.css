@@ -1,0 +1,172 @@
+img {
+    width: 35px;
+}
+
+/* Navbar Section */
+.navbar {
+    background-color: #99dfb3;
+}
+
+.navbar a {
+    position: relative;
+}
+
+.navbar a::before,
+.navbar a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: #000000;
+    bottom: 0;
+    transition: 0.35s ease-in-out;
+}
+
+.navbar a::before {
+    right: 50%;
+}
+
+.navbar a:hover::before {
+    width: calc(50% - 4px);
+}
+
+.navbar a::after {
+    left: 50%;
+}
+
+.navbar a:hover::after {
+    width: calc(50% - 4px);
+}
+
+/* Light/Dark Icon */
+.nav-item img {
+    aspect-ratio: 1 / 1;
+}
+
+.nav-item .btn {
+    border: none;
+}
+
+.nav-item .btn:hover {
+    outline: 1px solid;
+}
+
+/* Home Section */
+.profile-img {
+    width: 100%;
+    max-width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-img {
+        max-width: 300px;
+    }
+}
+
+.hand {
+    animation: handwave 1s infinite alternate-reverse;
+}
+
+@keyframes handwave {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.world {
+    animation: rotateWorld 6s infinite;
+}
+
+@keyframes rotateWorld {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.laptop {
+    animation: scaleLaptop 1s infinite alternate;
+}
+
+@keyframes scaleLaptop {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.home-accounts a img {
+    transition: 0.3s ease-in-out;
+}
+
+.home-accounts a:hover img {
+    transform: translateY(-8.5%);
+}
+
+/* About Section */
+.uit-img {
+    width: 30px;
+}
+
+.btn-explore {
+    transform: scale(0.98);
+    transition: 0.3s ease-in-out;
+}
+
+.btn-explore:hover {
+    transform: scale(1);
+}
+
+.btn-explore img {
+    width: 20px;
+    animation: updown 0.6s infinite alternate;
+}
+
+@keyframes updown {
+    from {
+        transform: translateY(-20%);
+    }
+    to {
+        transform: translateY(10%);
+    }
+}
+
+/* Project Section */
+.card {
+    overflow: hidden;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.accordion img {
+    width: 20px;
+}
+
+/* Light/Dark Mode Effect */
+section,
+.card-body,
+.accordion-body,
+.footer {
+    transition: background-color 1s ease-in-out, color 1.5s 1s ease-in-out;
+}
+
+.skill {
+    transition: background-color 1s ease-in-out;
+}
+
+a {
+    transition: color 1s ease-in-out;
+}

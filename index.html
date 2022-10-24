@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <title>My Portfolio</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- JavaScript Bundle with Popper -->
+        <script src="./js/bootstrap.bundle.min.js" defer></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- jQuery -->
+        <script src="./js/jquery.min.js" defer></script>
+
+        <!-- Custom JavaScript -->
+        <script src="./js/scripts.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <!-- Navigation Bar -->
+            <header class="fixed-top">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid px-3 px-md-4 px-lg-5">
+                        <a href="#" class="navbar-brand mb-0 h1 fs-1">Cma</a>
+
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div
+                            id="navbarNav"
+                            class="collapse navbar-collapse fs-5"
+                        >
+                            <ul
+                                class="navbar-nav ms-auto d-flex align-items-center"
+                            >
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#about" class="nav-link">About</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#projects" class="nav-link"
+                                        >Projects</a
+                                    >
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link"
+                                        >Contact</a
+                                    >
+                                </li>
+
+                                <li class="nav-item">
+                                    <button id="btn-mode" class="btn btn-sm">
+                                        <img
+                                            src="./images/decorations/moon.svg"
+                                            id="img-moon"
+                                            alt="Moon Icon"
+                                        />
+
+                                        <img
+                                            src="./images/decorations/sun.svg"
+                                            id="img-sun"
+                                            alt="Sun Icon"
+                                        />
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- Navigation Bar End -->
+
+            <!-- Main Content -->
+            <div class="fs-5">
+                <!-- Home Section -->
+                <section class="mt-4 pt-5">
+                    <div class="px-4 py-5 px-sm-5 text-center text-md-start">
+                        <div
+                            class="mx-lg-5 px-md-4 py-md-5 px-lg-5 d-md-flex justify-content-evenly align-items-center gap-4 gap-xl-5"
+                        >
+                            <div class="order-2 mb-4 mb-md-0">
+                                <img
+                                    src="./images/profile.jpg"
+                                    class="profile-img img-fluid img-thumbnail rounded-circle shadow-sm"
+                                    alt="My Profile Picture"
+                                />
+                            </div>
+
+                            <div class="order-1">
+                                <h1 class="lh-base">
+                                    Hello
+                                    <img
+                                        src="./images/decorations/hand-wave.svg"
+                                        class="hand mb-2"
+                                        alt="Hand Wave Icon"
+                                    />
+                                    , I'm Chan Myae.
+                                    <br />
+                                    A web developer
+                                    <img
+                                        src="./images/decorations/globe-world.svg"
+                                        class="world mb-1"
+                                        alt="World Icon"
+                                    />
+                                    <br />
+                                    Fullstack developer
+                                    <img
+                                        src="./images/decorations/laptop.svg"
+                                        class="laptop"
+                                        alt="Laptop Icon"
+                                    />
+                                </h1>
+
+                                <div class="home-accounts mt-3">
+                                    <a
+                                        href="https://github.com/cma124"
+                                        class="me-3 text-decoration-none"
+                                    >
+                                        <img
+                                            src="./images/logos/github.svg"
+                                            class="img-fluid"
+                                            alt="GitHub Logo"
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://www.linkedin.com/in/chan-myae-aung"
+                                        class="me-3 text-decoration-none"
+                                    >
+                                        <img
+                                            src="./images/logos/linkedin.svg"
+                                            class="img-fluid"
+                                            alt="LinkedIn Logo"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Home Section End -->
+
+                <hr class="m-0 text-light" />
+
+                <!-- About Section -->
+                <section
+                    id="about"
+                    class="px-4 py-5 px-sm-5 text-center text-md-start bg-light"
+                >
+                    <div class="px-lg-3 px-xl-5 pt-5 pb-3">
+                        <!-- About Me + Skill -->
+                        <div class="d-md-flex gap-4 gap-xl-5">
+                            <div>
+                                <h2>About Me</h2>
+
+                                <p>
+                                    I'm Chan Myae Aung. A computer science
+                                    student at University of Information
+                                    Technology (
+                                    <a href="https://www.uit.edu.mm/">
+                                        <img
+                                            src="./images/logos/uit.png"
+                                            class="uit-img"
+                                            alt="UIT Logo"
+                                        />
+                                        UIT
+                                    </a>
+                                    ) and a web developer with experience in
+                                    <strong>PHP</strong>,
+                                    <strong>Laravel</strong> and
+                                    <strong>Vue</strong> Framework.
+                                </p>
+
+                                <a
+                                    href="#projects"
+                                    class="btn-explore btn btn-lg btn-success"
+                                >
+                                    <span class="text-white">
+                                        Explore my projects
+                                    </span>
+                                    <img
+                                        src="./images/decorations/angles-down.svg"
+                                        class="ms-1"
+                                        alt="Down Arrow"
+                                    />
+                                </a>
+                            </div>
+
+                            <div class="mt-5 mt-md-0">
+                                <h3 class="h2 mb-3">Tech Stack</h3>
+
+                                <div
+                                    class="d-flex flex-wrap justify-content-center justify-content-md-start gap-4"
+                                >
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/html5.svg"
+                                            alt="HTML Logo"
+                                            height="40px"
+                                        />
+                                        <span class="ms-2">HTML</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/css3.svg"
+                                            alt="CSS Logo"
+                                            height="40px"
+                                        />
+                                        <span class="ms-2">CSS</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/javascript.svg"
+                                            alt="JavaScript Logo"
+                                        />
+                                        <span class="ms-2">JavaScript</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/bootstrap.svg"
+                                            alt="Bootstrap Logo"
+                                        />
+                                        <span class="ms-2">Bootstrap</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/jquery.svg"
+                                            alt="jQuery Logo"
+                                        />
+                                        <span class="ms-2">jQuery</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/php.svg"
+                                            alt="PHP Logo"
+                                        />
+                                        <span class="ms-2">PHP</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/laravel.svg"
+                                            alt="Laravel Logo"
+                                        />
+                                        <span class="ms-2">Laravel</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/vuejs.svg"
+                                            alt="Vue Logo"
+                                        />
+                                        <span class="ms-2">Vue</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/api.png"
+                                            alt="API Icon"
+                                        />
+                                        <span class="ms-2">API</span>
+                                    </div>
+
+                                    <div
+                                        class="skill border rounded shadow-sm px-3 py-2 d-flex align-items-center bg-white"
+                                    >
+                                        <img
+                                            src="./images/skills/mysql.png"
+                                            alt="MySQL Logo"
+                                        />
+                                        <span class="ms-2">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- About Me + Skill End -->
+                    </div>
+                </section>
+                <!-- About Section End -->
+
+                <hr class="m-0 text-light" />
+
+                <!-- Projects Section -->
+                <section
+                    id="projects"
+                    class="px-4 py-5 px-sm-5 text-center text-md-start"
+                >
+                    <div class="px-lg-3 px-xl-5 pt-5 pb-3">
+                        <h2 class="mb-3">Projects</h2>
+
+                        <div
+                            class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 text-black"
+                        >
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/fylo-landing-page.png"
+                                        class="card-img-top"
+                                        alt="Fylo Landing Page"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/fylo-dark-theme-landing-page"
+                                                class="text-decoration-none"
+                                                >Fylo Landing Page</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            A landing page, one of frontend
+                                            mentor challenges, developed using
+                                            <strong>HTML</strong>,
+                                            <strong>CSS</strong> and
+                                            <strong>JavaScript</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/fylo-dark-theme-landing-page"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://cma124.github.io/fylo-dark-theme-landing-page/"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Live"
+                                            class="text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/decorations/new-window.svg"
+                                                alt="New Tab"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/hulu-home.png"
+                                        class="card-img-top"
+                                        alt="Hulu Home Page"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/hulu-home"
+                                                class="text-decoration-none"
+                                                >Hulu Home Page</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Hulu home page clone with responsive
+                                            layout, developed using
+                                            <strong>HTML</strong>,
+                                            <strong>CSS</strong> and
+                                            <strong>JavaScript</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/hulu-home"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://cma124.github.io/hulu-home/"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Live"
+                                            class="text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/decorations/new-window.svg"
+                                                alt="New Tab"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/resume.png"
+                                        class="card-img-top"
+                                        alt="Resume"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/resume"
+                                                class="text-decoration-none"
+                                                >Resume</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Online resume website with
+                                            responsive layout, developed using
+                                            <strong>HTML</strong> and
+                                            <strong>CSS</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/resume"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://cma124.github.io/resume/"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Live"
+                                            class="text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/decorations/new-window.svg"
+                                                alt="New Tab"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/todo-jquery.png"
+                                        class="card-img-top"
+                                        alt="Todo Web App"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/todo-jquery"
+                                                class="text-decoration-none"
+                                                >Todo List</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Todo list web application with
+                                            browser local storage, developed
+                                            using
+                                            <strong>Bootstrap</strong> and
+                                            <strong>jQuery</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/todo-jquery"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                        <a
+                                            href="https://cma124.github.io/todo-jquery/"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Live"
+                                            class="text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/decorations/new-window.svg"
+                                                alt="New Tab"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/user-management.png"
+                                        class="card-img-top"
+                                        alt="User Management"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/user-management"
+                                                class="text-decoration-none"
+                                                >User Management</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            User management with different roles
+                                            and actions, developed using
+                                            <strong>Bootstrap</strong>,
+                                            <strong>PHP</strong> and
+                                            <strong>MySQL</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/user-management"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/laravel-blog.png"
+                                        class="card-img-top"
+                                        alt="Laravel Blog"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/blog"
+                                                class="text-decoration-none"
+                                                >Blog</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Blog system with articles and
+                                            comments, developed using
+                                            <strong>Bootstrap</strong>,
+                                            <strong>Laravel</strong> and
+                                            <strong>MySQL</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/blog"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/pizza-order-system.png"
+                                        class="card-img-top"
+                                        alt="Pizza Order System"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/pizza_order_system"
+                                                class="text-decoration-none"
+                                                >Pizza Order System</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Pizza order system with admin and
+                                            user panel, developed using
+                                            <strong>Bootstrap</strong>,
+                                            <strong>jQuery</strong>,
+                                            <strong>Laravel</strong> and
+                                            <strong>MySQL</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/pizza_order_system"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card">
+                                    <img
+                                        src="./images/projects/vue-todo.png"
+                                        class="card-img-top"
+                                        alt="Vue Todo"
+                                    />
+                                    <div class="card-body border-top">
+                                        <h5 class="card-title h4">
+                                            <a
+                                                href="https://github.com/cma124/todo"
+                                                class="text-decoration-none"
+                                                >Vue Todo List</a
+                                            >
+                                        </h5>
+                                        <p class="card-text">
+                                            Simple todo list with vue and
+                                            browser local storage, developed
+                                            using
+                                            <strong>Bootstrap</strong> and
+                                            <strong>Vue</strong>
+                                        </p>
+
+                                        <a
+                                            href="https://github.com/cma124/todo"
+                                            data-bs-toggle="tooltip"
+                                            data-bs-title="View Code"
+                                            class="me-2 text-decoration-none"
+                                        >
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                alt="GitHub Logo"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Projects Section End -->
+
+                <hr class="m-0 text-light" />
+
+                <!-- Contact Section -->
+                <section
+                    id="contact"
+                    class="px-4 py-5 px-sm-5 text-center text-md-start bg-light"
+                >
+                    <div class="px-lg-3 px-xl-5 pt-5 pb-3">
+                        <h2 class="mb-3">Contact Me</h2>
+
+                        <div class="accordion" id="accordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button
+                                        class="accordion-button fs-5"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne"
+                                    >
+                                        <img
+                                            src="./images/contact/account.svg"
+                                            class="me-2"
+                                            alt="Account Icon"
+                                        />
+                                        Accounts
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                >
+                                    <div class="accordion-body">
+                                        <div class="mb-3">
+                                            <img
+                                                src="./images/logos/gmail.svg"
+                                                class="me-2"
+                                                alt="Mail Icon"
+                                            />
+                                            <a
+                                                href="mailto:chan.myae.a.099@gmail.com"
+                                                >chan.myae.a.099@gmail.com</a
+                                            >
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <img
+                                                src="./images/logos/linkedin.svg"
+                                                class="me-2"
+                                                alt="LinkedIn Logo"
+                                            />
+                                            <a
+                                                href="https://www.linkedin.com/in/chan-myae-aung"
+                                                >linkedin.com/in/chan-myae-aung</a
+                                            >
+                                        </div>
+
+                                        <div class="mb-3">
+                                            <img
+                                                src="./images/logos/github.svg"
+                                                class="me-2"
+                                                alt="GitHub Logo"
+                                            />
+                                            <a href="https://github.com/cma124"
+                                                >github.com/cma124</a
+                                            >
+                                        </div>
+
+                                        <div class="mb-1">
+                                            <img
+                                                src="./images/logos/telegram.svg"
+                                                class="me-2"
+                                                alt="Telegram Logo"
+                                            />
+                                            <a
+                                                href="https://t.me/chanmyae124"
+                                                >t.me/chanmyae124</a
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button fs-5 collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo"
+                                    >
+                                        <img
+                                            src="./images/contact/location.svg"
+                                            class="me-2"
+                                            alt="Location Icon"
+                                        />
+                                        Address
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                >
+                                    <div class="accordion-body">
+                                        <p class="mb-0">
+                                            No.160, Aung Zayar Street, 2<sup
+                                                >nd</sup
+                                            >
+                                            Ward of Mayangone Township, Yangon,
+                                            Myanmar
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button fs-5 collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree"
+                                    >
+                                        <img
+                                            src="./images/contact/phone.svg"
+                                            class="me-2"
+                                            alt="Phone Icon"
+                                        />
+                                        Phone
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                >
+                                    <div class="accordion-body">
+                                        <a href="tel:+959776442547"
+                                            >+95 9 776 442 547</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Section End -->
+            </div>
+            <!-- Main Content End -->
+
+            <hr class="m-0 text-light" />
+
+            <footer class="footer py-4 text-center">
+                <p class="lead fs-6 m-0">
+                    Developed by
+                    <a href="https://github.com/cma124">cma124</a>
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>
