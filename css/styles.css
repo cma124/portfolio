@@ -4,7 +4,7 @@ img {
 
 /* Navbar Section */
 .navbar {
-    background-color: #99dfb3;
+    background-color: #459c98;
 }
 
 .navbar a {
@@ -18,7 +18,7 @@ img {
     position: absolute;
     height: 3px;
     width: 0;
-    background-color: #000000;
+    background-color: #ffffff;
     bottom: 0;
     transition: 0.35s ease-in-out;
 }
@@ -46,10 +46,6 @@ img {
 
 .nav-item .btn {
     border: none;
-}
-
-.nav-item .btn:hover {
-    outline: 1px solid;
 }
 
 /* Home Section */
@@ -117,11 +113,13 @@ img {
 }
 
 .btn-explore {
+    background-color: #459c98;
     transform: scale(0.98);
     transition: 0.3s ease-in-out;
 }
 
 .btn-explore:hover {
+    background-color: #459c98;
     transform: scale(1);
 }
 
@@ -153,6 +151,11 @@ img {
 /* Contact Section */
 .accordion img {
     width: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #e7f1ff;
 }
 
 /* Light/Dark Mode Effect */
